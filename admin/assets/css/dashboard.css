@@ -1,0 +1,94 @@
+@media (max-width: 768px) {
+  .login-status .status-text {
+    display: none;
+  }
+
+  .login-status {
+    padding: 5px 7px;
+    min-width: auto;
+    justify-content: center;
+  }
+
+  .login-status i {
+    margin: 0;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ATTENDANCE SUMMARY CHART
+   ══════════════════════════════════════════════════════════════ */
+.chart-period-group {
+  display: inline-flex;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 3px;
+  gap: 2px;
+}
+
+.chart-period-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease, box-shadow .15s ease;
+  white-space: nowrap;
+}
+
+.chart-period-btn:hover { color: var(--text); }
+
+.chart-period-btn.active {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, .35);
+}
+
+.chart-canvas-wrap {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.chart-canvas-wrap canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.chart-loading,
+.chart-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-light);
+  font-size: 13px;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.chart-loading i { font-size: 28px; color: var(--primary); }
+.chart-empty i { font-size: 34px; }
+.chart-empty p { margin: 0; }
+
+@media (max-width: 768px) {
+  .chart-canvas-wrap { height: 240px; }
+  .chart-period-btn  { padding: 6px 10px; font-size: 11.5px; }
+}
+
+@media (max-width: 480px) {
+  .chart-canvas-wrap { height: 200px; }
+  .chart-period-group { width: 100%; justify-content: space-between; }
+  .chart-period-btn   { flex: 1; text-align: center; }
+}
+
+@media (max-width: 360px) {
+  .chart-canvas-wrap { height: 180px; }
+}

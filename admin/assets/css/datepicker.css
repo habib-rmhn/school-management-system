@@ -1,0 +1,287 @@
+/* ================================================================
+   EMS Universal Date Picker
+   Drives every <input type="date"> in the admin panel.
+   Colors/spacing pulled from admin.css design tokens — no new
+   variables introduced, so it always matches the current theme.
+   ================================================================ */
+
+.dp-input-wrap {
+  position: relative;
+}
+
+/* Visible fake input — styled to match .form-control exactly.
+   Typeable: dd/mm/yyyy, auto-formatted as you type. */
+.dp-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 38px 0 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-sm);
+  font-family: inherit;
+  font-size: 13.5px;
+  color: var(--text);
+  background: #fff;
+  outline: none;
+  box-sizing: border-box;
+  cursor: text;
+  transition: border-color var(--t), box-shadow var(--t);
+  letter-spacing: .02em;
+}
+
+.dp-input::placeholder { color: var(--text-light); letter-spacing: normal; }
+
+.dp-input:focus,
+.dp-input.dp-active {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, .1);
+}
+
+.dp-input.dp-invalid {
+  border-color: var(--red);
+}
+
+.dp-input.dp-invalid:focus,
+.dp-input.dp-invalid.dp-active {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, .1);
+}
+
+.dp-input.dp-disabled {
+  cursor: not-allowed;
+  background: var(--bg);
+  color: var(--text-light);
+}
+
+/* Real <input type="date"> — kept in the layout (not display:none) so
+   `required` validation still works, but invisible and inert. */
+.dp-native-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dp-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* clicks fall through to .dp-input beneath it */
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+}
+
+.dp-input.dp-disabled ~ .dp-icon { color: var(--text-light); }
+
+/* Popup is appended directly to <body> and positioned with
+   position:fixed + inline top/left set by JS on open/scroll/resize.
+   This means it can NEVER be clipped by an ancestor's
+   overflow:hidden (cards, modals, scroll containers, etc.) */
+.dp-popup {
+  position: fixed;
+  z-index: 10050;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-lg);
+  width: 280px;
+  max-width: calc(100vw - 24px);
+  padding: 14px;
+  box-sizing: border-box;
+  display: none;
+  animation: dpFadeIn .14s var(--ease);
+}
+
+.dp-popup.dp-open { display: block; }
+
+@keyframes dpFadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.dp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dp-nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 9px;
+  border-radius: var(--r-sm);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1;
+  transition: background var(--t-fast);
+}
+
+.dp-nav-btn:hover { background: var(--bg); }
+
+.dp-month-year {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--text);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--r-sm);
+  font-family: inherit;
+  transition: background var(--t-fast);
+}
+
+.dp-month-year:hover { background: var(--bg); }
+
+.dp-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 4px;
+}
+
+.dp-wd {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-light);
+  padding: 4px 0;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.dp-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.dp-day {
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 0;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+  color: var(--text);
+  font-family: inherit;
+  transition: background .1s, color .1s;
+  user-select: none;
+  line-height: 1;
+}
+
+.dp-day:hover:not(.dp-selected):not(.dp-day-empty):not(.dp-disabled) {
+  background: var(--bg);
+}
+
+.dp-day.dp-other-month { color: var(--text-light); }
+.dp-day.dp-day-empty   { cursor: default; }
+
+.dp-day.dp-disabled {
+  color: var(--text-light);
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.dp-day.dp-today {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.dp-day.dp-selected {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.dp-day.dp-selected.dp-today { box-shadow: inset 0 0 0 1.5px #fff; }
+
+.dp-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+}
+
+.dp-today-btn {
+  font-size: 12px;
+  color: var(--primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--r-sm);
+  font-family: inherit;
+  font-weight: 700;
+  transition: background var(--t-fast);
+}
+
+.dp-today-btn:hover:not(:disabled) { background: var(--primary-xlight); }
+.dp-today-btn:disabled { color: var(--text-light); cursor: not-allowed; }
+
+.dp-clear-btn {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--r-sm);
+  font-family: inherit;
+  font-weight: 600;
+  transition: background var(--t-fast), color var(--t-fast);
+}
+
+.dp-clear-btn:hover { background: var(--bg); color: var(--text); }
+
+.dp-month-grid,
+.dp-year-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.dp-month-cell,
+.dp-year-cell {
+  text-align: center;
+  font-size: 13px;
+  padding: 7px 4px;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+  color: var(--text);
+  font-family: inherit;
+  transition: background var(--t-fast);
+}
+
+.dp-month-cell:hover,
+.dp-year-cell:hover { background: var(--bg); }
+
+.dp-month-cell.dp-cell-active,
+.dp-year-cell.dp-cell-active {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.dp-month-cell.dp-disabled,
+.dp-year-cell.dp-disabled {
+  color: var(--text-light);
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.dp-year-range {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  font-family: inherit;
+}
