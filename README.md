@@ -26,14 +26,7 @@ School branding can be managed through the administrator settings page. Database
 
 ## Preview
 
-<table>
-  <tr><th>Application preview</th></tr>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Once uploaded, replace the table above with:
 ![School EMS administrator dashboard](docs/screenshots/admin-dashboard.png)
--->
 
 Visit the **[screenshot gallery](docs/screenshots/README.md)** for dedicated spaces for the login page, administrator tools, teacher portal, and student portal. Image files belong in `docs/screenshots/`.
 
