@@ -1,6 +1,6 @@
 <div align="center">
 
-# KKHS EMS
+# School EMS
 
 ### Education Management System
 
@@ -16,7 +16,7 @@ A school management application connecting administration, teachers, and student
 
 ## Overview
 
-KKHS EMS brings student admission, academic planning, attendance, examinations, results, and fee records into one application. Built for Khajura Kathaltala High School, it includes workflows for Classes 6–10, Science/Arts/Commerce groups, academic sessions, subject choices, scholarships, and student promotion.
+School EMS brings student admission, academic planning, attendance, examinations, results, and fee records into one application. Built for Khajura Kathaltala High School, it includes workflows for Classes 6–10, Science/Arts/Commerce groups, academic sessions, subject choices, scholarships, and student promotion.
 
 Administrators manage school operations, teachers work with their assigned classes and subjects, and students access their own academic and financial records. The application uses server-rendered PHP pages with AJAX interactions and separate responsive interfaces for each role.
 
@@ -32,7 +32,7 @@ School branding can be managed through the administrator settings page. Database
 </table>
 
 <!-- Once uploaded, replace the table above with:
-![KKHS EMS administrator dashboard](docs/screenshots/admin-dashboard.png)
+![School EMS administrator dashboard](docs/screenshots/admin-dashboard.png)
 -->
 
 Visit the **[screenshot gallery](docs/screenshots/README.md)** for dedicated spaces for the login page, administrator tools, teacher portal, and student portal. Image files belong in `docs/screenshots/`.
@@ -180,7 +180,7 @@ Start Apache and MySQL in the XAMPP Control Panel. A dedicated virtual host is a
 
 ### 3. Request and import the database
 
-**Database files (`.sql`), including schema exports and migrations, are not provided on GitHub.** Email **[habibur@eidhl.com](mailto:habibur@eidhl.com)** to request the database file matching this version of KKHS EMS. The database is required to run the application.
+**Database files (`.sql`), including schema exports and migrations, are not provided on GitHub.** Email **[habibur@eidhl.com](mailto:habibur@eidhl.com)** to request the database file matching this version of School EMS. The database is required to run the application.
 
 After receiving the file:
 
@@ -450,7 +450,7 @@ Contact the maintainer about proposed changes and license/permission questions b
 
 | Detail | Value |
 | --- | --- |
-| Project | KKHS EMS — Education Management System |
+| Project | School EMS — Education Management System |
 | School | Khajura Kathaltala High School |
 | Author / maintainer | Habibur Rahman |
 | Repository URL | To be supplied by the maintainer |
