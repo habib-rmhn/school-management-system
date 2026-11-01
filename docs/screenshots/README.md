@@ -2,19 +2,6 @@
 
 [← Back to the project README](../../README.md)
 
-Reserved spaces for real application screenshots. No screenshots have been added yet.
-
-## Adding screenshots
-
-1. Capture the relevant page using fictional or anonymized records.
-2. Save the image in this folder using the filename shown below. PNG is used in the templates; update the link if you prefer another format.
-3. Replace that section's placeholder table with its commented Markdown image line, removing `<!--` and `-->`.
-4. Manually upload the approved image and updated Markdown through GitHub's website, keeping this folder structure. GitHub renders the image directly in this gallery. Inspect the selection yourself; `.gitignore` does not filter a Web upload.
-
-The gallery path is `docs/screenshots/README.md`. It is a documentation page in the repository, not a new application endpoint. Images use relative paths, so no repository URL is required.
-
-For the main README preview, upload `admin-dashboard.png` here and enable its image line in the root README as well. Keep screenshots readable, use consistent window dimensions where practical, and exclude passwords, real contact details, and personal records.
-
 ## Gallery index
 
 - [Login](#login)
