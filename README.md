@@ -452,12 +452,12 @@ Contact the maintainer about proposed changes and license/permission questions b
 | --- | --- |
 | Project | School EMS — Education Management System |
 | Author / maintainer | Habibur Rahman |
-| Repository URL | To be supplied by the maintainer |
-| Live demo | Not provided |
+| Repository URL | https://github.com/habib-rmhn/school-management-system |
+| Live demo | [KKHS EMS](https://ems.eidhl.com) |
 | Contact | [habibur@eidhl.com](mailto:habibur@eidhl.com) |
 | Database file | Available by contacting [habibur@eidhl.com](mailto:habibur@eidhl.com); not included on GitHub |
-| Release notes | To be supplied by the maintainer |
-| Application license | Unspecified |
+| Release notes | [GitHub Releases](../../releases) |
+| Application license | Unspecified for now |
 
 ## License and copyright
 
