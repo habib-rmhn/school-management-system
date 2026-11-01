@@ -59,7 +59,7 @@ Page: `index.php` · Image: `login.png`
 
 School overview, charts, and quick navigation.
 
-Page: `admin/dashboard.php` · Image: `admin-dashboard.png`
+Page: `admin/dashboard.php` · Image: `docs/screenshots/admin-dashboard.png`
 
 <table>
   <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
