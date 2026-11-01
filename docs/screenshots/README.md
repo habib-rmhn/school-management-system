@@ -45,13 +45,7 @@ Role selector and shared sign-in page.
 
 Page: `index.php` · Image: `login.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Login — KKHS EMS](login.png)
--->
+![Login](login.png)
 
 <a id="admin-dashboard"></a>
 
@@ -61,13 +55,7 @@ School overview, charts, and quick navigation.
 
 Page: `admin/dashboard.php` · Image: `docs/screenshots/admin-dashboard.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Administrator dashboard — KKHS EMS](admin-dashboard.png)
--->
+![Login Page](login.png)
 
 <a id="admin-admission"></a>
 
@@ -77,13 +65,7 @@ Admission form, enrollment details, and subject choices. Use fictional names and
 
 Page: `admin/admission.php` · Image: `admin-admission.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Student admission — KKHS EMS](admin-admission.png)
--->
+![Student Admission](student-admission.png)
 
 <a id="admin-students"></a>
 
@@ -93,13 +75,7 @@ Student records, filters, and profile tools.
 
 Page: `admin/students.php` · Image: `admin-students.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Student management — KKHS EMS](admin-students.png)
--->
+![Student Management](student-management.png)
 
 <a id="admin-teachers"></a>
 
@@ -109,13 +85,7 @@ Teacher records and account tools.
 
 Page: `admin/teachers.php` · Image: `admin-teachers.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Teacher management — KKHS EMS](admin-teachers.png)
--->
+![Teacher Management](teacher-management.png)
 
 <a id="admin-routine"></a>
 
@@ -125,13 +95,7 @@ Timetable slots and teaching assignments.
 
 Page: `admin/routine.php` · Image: `admin-routine.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Class routine — KKHS EMS](admin-routine.png)
--->
+![Class Routine](class-routine.png)
 
 <a id="admin-attendance"></a>
 
@@ -141,13 +105,7 @@ Attendance entry and reporting.
 
 Page: `admin/attendance.php` · Image: `admin-attendance.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Attendance — KKHS EMS](admin-attendance.png)
--->
+![Attendance](attendance-management.png)
 
 <a id="admin-exams"></a>
 
@@ -157,13 +115,7 @@ Exam configuration and subject schedules.
 
 Page: `admin/exams.php` · Image: `admin-exams.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Examinations — KKHS EMS](admin-exams.png)
--->
+![Examinations](examination-management.png)
 
 <a id="admin-results"></a>
 
@@ -173,13 +125,7 @@ Result previews and publication tools.
 
 Page: `admin/results.php` · Image: `admin-results.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Marks and results — KKHS EMS](admin-results.png)
--->
+![Marks and Results](results-management.png)
 
 <a id="admin-seat-plan"></a>
 
@@ -189,13 +135,7 @@ Shared rooms, student participation, and seat allocation.
 
 Page: `admin/seat-plan.php` · Image: `admin-seat-plan.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Exam seat planning — KKHS EMS](admin-seat-plan.png)
--->
+![Exam Seat Planning](seat-planning.png)
 
 <a id="admin-payments"></a>
 
@@ -205,13 +145,7 @@ Student dues, payment records, and ledgers.
 
 Page: `admin/payments.php` · Image: `admin-payments.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Payments — KKHS EMS](admin-payments.png)
--->
+![Payments](payment-management.png)
 
 <a id="admin-settings"></a>
 
@@ -221,13 +155,7 @@ School profile, logo, and maintenance controls.
 
 Page: `admin/settings.php` · Image: `admin-settings.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![School settings — KKHS EMS](admin-settings.png)
--->
+![School Settings](school-settings.png)
 
 <a id="teacher-dashboard"></a>
 
@@ -237,13 +165,7 @@ Teaching overview and pending work.
 
 Page: `teacher/dashboard.php` · Image: `teacher-dashboard.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Teacher dashboard — KKHS EMS](teacher-dashboard.png)
--->
+![Teacher Dashboard](teacher-dashboard.png)
 
 <a id="teacher-marks"></a>
 
@@ -253,13 +175,7 @@ Marks entry for assigned subjects.
 
 Page: `teacher/marks.php` · Image: `teacher-marks.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Teacher marks entry — KKHS EMS](teacher-marks.png)
--->
+![Teacher Marks Entry](teacher-marking.png)
 
 <a id="student-dashboard"></a>
 
@@ -269,13 +185,7 @@ Personal academic overview and portal navigation.
 
 Page: `student/dashboard.php` · Image: `student-dashboard.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Student dashboard — KKHS EMS](student-dashboard.png)
--->
+![Student Dashboard](student-dashboard.png)
 
 <a id="student-results"></a>
 
@@ -285,13 +195,7 @@ Published examination results.
 
 Page: `student/results.php` · Image: `student-results.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Student results — KKHS EMS](student-results.png)
--->
+![Student Results](student-results.png)
 
 <a id="student-admit-card"></a>
 
@@ -301,13 +205,7 @@ Printable examination admit card.
 
 Page: `student/admit-card.php` · Image: `student-admit-card.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Student admit card — KKHS EMS](student-admit-card.png)
--->
+![Student Admit Card](student-admit-card.png)
 
 <a id="student-seat-plan"></a>
 
@@ -317,13 +215,7 @@ Personal examination room and seat details.
 
 Page: `student/seat-plan.php` · Image: `student-seat-plan.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Student seat plan — KKHS EMS](student-seat-plan.png)
--->
+![Student Seat Plan](student-seat-plan.png)
 
 <a id="student-payments"></a>
 
@@ -333,10 +225,4 @@ Personal dues and payment history.
 
 Page: `student/payments.php` · Image: `student-payments.png`
 
-<table>
-  <tr><td align="center"><br><br><em>Screenshot space reserved</em><br><br><br></td></tr>
-</table>
-
-<!-- Replace the placeholder table above with this line after uploading the image:
-![Student payment ledger — KKHS EMS](student-payments.png)
--->
+![Student Payment](student-payments.png)
