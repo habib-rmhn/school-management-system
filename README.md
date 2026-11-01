@@ -451,7 +451,6 @@ Contact the maintainer about proposed changes and license/permission questions b
 | Detail | Value |
 | --- | --- |
 | Project | School EMS — Education Management System |
-| School | Khajura Kathaltala High School |
 | Author / maintainer | Habibur Rahman |
 | Repository URL | To be supplied by the maintainer |
 | Live demo | Not provided |
